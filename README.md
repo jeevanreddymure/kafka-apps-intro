@@ -1,13 +1,16 @@
 # kafka-apps-intro
 ## Commands for Kafka:
 All the commands should be executed using powershell opened in kafaka directory
-- Running Zookeeper service (Run in its own window): `.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties`
-- Running Kafka service (Run in its own window): `.\bin\windows\kafka-server-start.bat .\config\server.properties`
-- Creating a topic: `.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --create --topic {insert your unique name here}`
-- Prompting to write a message to a topic: `.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic {insert your unique name here}`
-- Deleting a topic: `.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --delete --topic {insert your unique name here}`
-- Listing the contents of a topic: `.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --list`
-- Listing a message within a topic: `.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic {insert your unique name here} --from-beginning`
+- Command to run a zookeeper service
+  `.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties`  
+- Command for Running Kafka service  
+  `.\bin\windows\kafka-server-start.bat .\config\server.properties`
+- command for Creating a topic: 
+  `.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --create --topic {insert your unique      name here}`
+- command for deleting a topic
+   `.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --delete --topic {insert your unique      name here}`
+-  command for Listing a message within a topic
+   `.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic {insert your unique name here} --from-beginning`
 ## My unique commands are as follows
 - `.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties` to run Zookeeper sevice
 - `.\bin\windows\kafka-server-start.bat .\config\server.properties` to run kafka service
