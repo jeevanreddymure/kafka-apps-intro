@@ -9,7 +9,7 @@ All the commands should be executed using powershell opened in kafaka directory
 - Listing the contents of a topic: `.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --list`
 - Listing a message within a topic: `.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic {insert name of topic here} --from-beginning`
 ## My unique commands are as follows
--`.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties`
+- `.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties`
 - `.\bin\windows\kafka-server-start.bat .\config\server.properties`
 - `.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --create --topic COVID`
 - `.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --list`
